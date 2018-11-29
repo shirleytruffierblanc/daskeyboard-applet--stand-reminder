@@ -9,8 +9,6 @@ Displays stock quote variations on a Das Keyboard Q Series.
 
 Stand Reminder on key `s`
 
-![Stock quote on a Das Keybaord Q](https://raw.githubusercontent.com/daskeyboard/daskeyboard-applet--stock-quote/master/assets/q-applet-stock-quote-image.png "Q Stock quote")
-
 ## Changelog
 
 [CHANGELOG.MD](CHANGELOG.md)
