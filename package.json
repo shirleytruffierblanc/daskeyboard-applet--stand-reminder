@@ -1,0 +1,61 @@
+{
+  "name": "q-applet-stock-quote",
+  "displayName": "Stock Quote",
+  "version": "1.0.3",
+  "description": "Changes the key colors based on stock price variation",
+  "longDescription": "Monitor your favorite stock tickers and stay on top of the stock market.",
+  "officialProductName": "",
+  "appUrl": "",
+  "publisherName": "Das Keyboard",
+  "isSingleton": false,
+  "videoUrl": "",
+  "icon": "assets/icon.png",
+  "image": "assets/q-applet-stock-quote-image.png",
+  "authorName": "Das Keyboard team",
+  "authorUrl": "https://twitter.com/daskeyboard",
+  "issuesUrl": "https://github.com/daskeyboard/q-applet-stock-quote/issues",
+  "homepage": "https://github.com/daskeyboard/q-applet-stock-quote",
+  "developerRepoUrl": "https://github.com/daskeyboard/q-applet-stock-quote",
+  "licenseUrl": "http://www.gnu.org/licenses/old-licenses/gpl-2.0.txt",
+  "changelogUrl": "",
+  "qActionUrl": "",
+  "dependencies": {
+    "daskeyboard-applet": "^2.7.13"
+  },
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "qConfig": {
+    "geometry": {
+      "width": 1,
+      "height": 1,
+      "origin" : {
+        "x" :1,
+        "y" :1
+      }
+    },
+    "applet": {
+      "defaults": {}
+    },
+    "questions": [
+      {
+        "key": "reminder",
+        "label": "Reminder to stand up every hour at",
+        "help": "past the hour",
+        "required": true,
+        "order": 1,
+        "controlType": "dropdown",
+        "options":[0, 1, 15, 30, 50]
+      }
+    ],
+    "requirements": {
+      "applet": {
+        "reminder": "string"
+      }
+    }
+  },
+  "devDependencies": {
+    "mocha": "^5.2.0"
+  }
+}
